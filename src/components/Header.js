@@ -1,7 +1,8 @@
+import React from 'react';
+import "./Header.css"
 const Header = () => (
-    <div>
-        <h2>Home</h2>
-        <Link to={"/function"}>link</Link>
+    <div className={"Header"}>
+        <h2>Header</h2>
     </div>
 );
 
