@@ -1,9 +1,16 @@
 import React from 'react';
 import "./FunctionPane.css"
-const Footer = () => (
-    <div className={"FunctionPane"}>
-        <h2>Main Function page</h2>
-    </div>
-);
+import AutoComplete from "./AutoComplete";
 
-export default Footer;
+export default class FunctionPane extends React.Component {
+    dataSource = ['Burns Bay Road', 'Downing Street', 'Wall Street'];
+
+    render() {
+        return (
+            <div className={"FunctionPane"}>
+                <h2>Main Function pane</h2>
+                <AutoComplete dataSource={this.dataSource}/>
+            </div>
+        );
+    }
+}
